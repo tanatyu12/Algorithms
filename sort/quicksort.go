@@ -26,7 +26,6 @@ func Quicksort(arr []int) []int {
 			right = append(right, val)
 		}
 	}
-
 	arr = append(Quicksort(left), []int{pivot}...)
 	arr = append(arr, Quicksort(right)...)
 	return arr
