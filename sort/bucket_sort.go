@@ -27,7 +27,7 @@ func main() {
 	bucketNum := 8
 	buckets := make([]Bucket, bucketNum)
 	for i := 0; i < len(arr); i++ {
-		k := hash(arr[i])
+		k := Hash(arr[i])
 		
 		e := Entry{arr[i], nil}
 		if buckets[k].head == nil {
@@ -43,7 +43,7 @@ func main() {
 	fmt.Println(sortedArr)
 }
 
-func hash(x int) int {
+func Hash(x int) int {
 	return x / 2
 }
 
